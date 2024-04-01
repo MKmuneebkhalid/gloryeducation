@@ -1,0 +1,70 @@
+/**********************************
+
+Name: cmxform Styles
+
+***********************************/
+form.cmxform {
+/*	width: 75%;*/
+	font-size: 1.0em;
+	color: #333;
+}
+
+form.cmxform legend {
+	padding-left: 0;
+}
+
+form.cmxform legend, form.cmxform label {
+	color: #333;
+}
+
+form.cmxform fieldset {
+	border: none;
+	border-top: 1px solid #C9DCA6;
+	background: url(../images/cmxform-fieldset.gif) left bottom repeat-x;
+	background-color: #F8FDEF;
+}
+
+form.cmxform fieldset fieldset {
+	background: none;
+}
+
+form.cmxform fieldset p, form.cmxform fieldset fieldset {
+	padding: 5px 10px 7px;
+	background: url(../images/cmxform-divider.gif) left bottom repeat-x;
+}
+
+form.cmxform label.error, label.error {
+	/* remove the next line when you have trouble in IE6 with labels in list */
+	color: #cc0000;
+	font-style: italic;
+        font-size:0.9em;
+/*position: relative;*/
+/*display: inline-block;*/
+/*border-bottom: 1px dotted black;
+visibility: visible;
+width: 250px !important;
+background-color: #cc0000;
+color: #fff;
+text-align: center;
+padding: 5px 0;
+border-radius: 6px;
+font-size:0.8em;
+margin-top:-35px;
+margin-left:160px;
+word-wrap: break-word;
+ Position the tooltip text - see examples below! 
+position: absolute;
+z-index: 9999;
+max-width:80% !important;*/
+
+ 
+}
+div.error { display: none; }
+/*form.cmxform input {	border: 1px solid #993300; }*/
+form.cmxform input.checkbox { border: none }
+/* input:focus { border: 1px solid #cc0000; }*/
+form.cmxform input.error { border: 1px solid #cc0000;background:#ffbfbf; }
+form.cmxform textarea.error { border: 1px solid #cc0000;background:#ffbfbf; }
+form.cmxform select.error { border: 1px solid #cc0000;background:#ffbfbf; }
+form.cmxform .gray * { color: gray; }
+.form-control:focus {border: 1px solid #cc0000 !important;}

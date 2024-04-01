@@ -1,0 +1,65 @@
+<!-- page title -->
+<section class="page-title-section overlay" data-background="<%= process.env.PLATFORM_URL %>/assets/images/backgrounds/page-title.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <ul class="list-inline custom-breadcrumb mb-2">
+                    <li class="list-inline-item"><a class="h3 text-primary font-secondary" href="<%= process.env.PLATFORM_URL %>">Home</a></li>
+                    <li class="list-inline-item text-white h3 font-secondary nasted">Register</li>
+                </ul>
+                <p class="text-lighten mb-0">The GES dashboard provides 24 hour access to partners with insight into student recruitment data for their respective organisation.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /page title -->
+
+<!-- contact -->
+<section class="section bg-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="section-title">Create a GES Partner Account</h2>
+            </div>
+        </div>
+        <form  action="/verify-account"  method="post" name="signup" class="row g-3 needs-validation cmxform" novalidate id="registerForm" enctype="multipart/form-data">
+        <div class="row">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                    <input type="text" class="form-control mb-3" id="firstname" name="firstname" placeholder="Primary Contact Firstname" required>
+                    <input type="email" class="form-control mb-3" id="email" name="email" placeholder="Primary Contact Email" required>
+                    <select name="institution" id="institution" class="form-control mb-3">
+                        <option value="">Select Institution...</option>
+                        <% if(list) { %>
+                        <% list.forEach((row, index) => { %>
+                              <optgroup label="<%= row.country %>">
+                                  <%  row.schools.forEach((s, i) => { %>
+                                  <option value="<%= s.code %>|<%= s.name %>"><%= s.name %></option>
+                                  <% }); %>
+                              </optgroup>
+                        <% }); %>
+                        <% } %>
+                    </select>
+                  <p><b>Official Address:</b></p>
+                <input type="text" class="form-control mb-3" id="address1" name="address1" placeholder="Address1" required>
+                <input type="text" class="form-control mb-3" id="address2" name="address2" placeholder="Address2" required>
+                <input type="text" class="form-control mb-3" id="province" name="province" placeholder="Province" required>
+                <input type="text" class="form-control mb-3" id="postcode" name="postcode" placeholder="Postcode" required>
+                <input type="text" class="form-control mb-3" id="country" name="country" placeholder="Country" required>
+                    <button type="submit"  class="btn btn-primary">Register</button>
+
+            </div>
+            <div class="col-lg-6">
+                <input type="text" class="form-control mb-3" id="lastname" name="lastname" placeholder="Primary Contact Lastname" required>
+                <input type="password" class="form-control mb-3" id="password" name="password" placeholder="Password" required>
+                <br/>
+                <p class="mb-5"><b>NB</b>: &nbsp; Please be aware that the primary contact is expected to commence initial sign up to create the primary account on behalf of their respective institution. They can then invite additional members under their account should they need more users on teh GES partners platform.</p>
+                <p class="mb-5">If in need of any further assistance, please contact our team via email: <br/>
+                <a href="mailto:enquiries@gloryeduserve.com" class="mb-5 text-color h5 d-block"><small><b>enquiries@gloryeduserve.com</b></small></a></p>
+
+            </div>
+        </div>
+        </form>
+    </div>
+</section>
+<!-- /register form -->
+

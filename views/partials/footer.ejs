@@ -1,0 +1,86 @@
+<!-- footer content -->
+<footer>
+<div class="footer bg-footer section border-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-sm-8 mb-5 mb-lg-0">
+                <!-- logo -->
+                <a class="logo-footer" href="#"><img class="img-fluid mb-4" src="<%= process.env.PLATFORM_URL %>/assets/images/logox.png" alt="logo" style="width:80%;height:auto;"></a>
+                <ul class="list-unstyled">
+                    <li class="mb-2">First Floor Rear Suites Alpha Plaza,
+                        Obafemi Awolowo Way, Secretariat Bus Stop, Central Business District Alausa, Ikeja, Lagos, Nigeria.</li>
+                    <li class="mb-2">+(234)-8177668738</li>
+                    <li class="mb-2">+(234)-09015753744</li>
+                    <li class="mb-2">enquiries@gloryeduserve.com</li>
+                </ul>
+            </div>
+            <!-- company -->
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                <h4 class="text-white mb-5">COMPANY</h4>
+                <ul class="list-unstyled">
+                    <li class="mb-3"><a class="text-color" href="#">About GES</a></li>
+                    <li class="mb-3"><a class="text-color" href="#">Institutions</a></li>
+                    <li class="mb-3"><a class="text-color" href="#">Contact</a></li>
+                    <li class="mb-3"><a class="text-color" href="#">Events</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0">
+                <h4 class="text-white mb-5">LINKS</h4>
+                <ul class="list-unstyled">
+                    <li class="mb-3"><a class="text-color" href="#">Privacy Policy</a></li>
+                    <li class="mb-3"><a class="text-color" href="#">Terms & Conditions</a></li>
+                    <li class="mb-3"><a class="text-color" href="#">FAQs</a></li>
+                    <li class="mb-3"><a class="text-color" href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0"></div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-5 mb-md-0"></div>
+        </div>
+    </div>
+</div>
+<!-- copyright -->
+<div class="copyright py-4 bg-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7 text-sm-left text-center">
+                <p class="mb-0">Copyright &copy;
+                    <script>
+                        var CurrentYear = new Date().getFullYear()
+                        document.write(CurrentYear)
+                    </script>
+                    , All rights reserved. Glory Educational Services Ltd.
+                </p>
+            </div>
+            <div class="col-sm-5 text-sm-right text-center">
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- move top -->
+    <button onclick="topFunction()" id="movetop" title="Go to top">
+        <span class="fa fa-angle-up"></span>
+    </button>
+    <script>
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("movetop").style.display = "block";
+            } else {
+                document.getElementById("movetop").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <!-- /move top -->
+</footer>
+<!-- /footer -->
+

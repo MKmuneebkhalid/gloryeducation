@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]--><!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+    <title><%= title %></title>
+    <meta charSet="utf-8"/>
+    <meta name="referrer" content="no-referrer-when-downgrade"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <meta name="title" content="GES Partner | Home"/>
+    <meta name="description" content=" Glory Educational Services Ltd. started recruitment business in 1998 but commenced trading officially from August 1999."/>
+    <meta name="keywords" content="UCAS, skills, software, education, University, Computing, Information, services, Creative"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="author" content="James Abiagam"/>
+    <meta name="revisit-after" content="1day"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="<%= process.env.PLATFORM_URL %>/assets/icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="<%= process.env.PLATFORM_URL %>/assets/icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="<%= process.env.PLATFORM_URL %>/assets/icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="<%= process.env.PLATFORM_URL %>/assets/icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="<%= process.env.PLATFORM_URL %>/assets/icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="<%= process.env.PLATFORM_URL %>/assets/icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="<%= process.env.PLATFORM_URL %>/assets/icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="<%= process.env.PLATFORM_URL %>/assets/icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="<%= process.env.PLATFORM_URL %>/assets/icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="<%= process.env.PLATFORM_URL %>/assets/icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<%= process.env.PLATFORM_URL %>/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="<%= process.env.PLATFORM_URL %>/assets/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<%= process.env.PLATFORM_URL %>/assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="<%= process.env.PLATFORM_URL %>/assets/icons/manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link href="<%= process.env.PLATFORM_URL %>/admin/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<%= process.env.PLATFORM_URL %>/admin/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="<%= process.env.PLATFORM_URL %>/admin/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="<%= process.env.PLATFORM_URL %>/admin/assets/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="<%= process.env.PLATFORM_URL %>/admin/assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+    <link href="<%= process.env.PLATFORM_URL %>/admin/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="<%= process.env.PLATFORM_URL %>/admin/assets/vendor/simple-datatables/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="<%= process.env.PLATFORM_URL %>/assets/css/flash.css" type="text/css">
+    <link rel="stylesheet" href="<%= process.env.PLATFORM_URL %>/assets/css/cmxform.css" type="text/css">
+    <!-- Template Main CSS File -->
+    <link href="<%= process.env.PLATFORM_URL %>/admin/assets/css/style.css" rel="stylesheet">
+    <!--    <link   rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>-->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/additional-methods.js"></script>
+    <script src="<%= process.env.PLATFORM_URL %>/assets/js/global.validation.js"></script>
+    <script src="<%= process.env.PLATFORM_URL %>/assets/js/global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+<%- include('../partials/flash'); -%>
+<%- content %>
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="<%= process.env.PLATFORM_URL %>/admin/assets/vendor/apexcharts/apexcharts.min.js"></script>
+<script src="<%= process.env.PLATFORM_URL %>/admin/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="<%= process.env.PLATFORM_URL %>/admin/assets/vendor/chart.js/chart.umd.js"></script>
+<script src="<%= process.env.PLATFORM_URL %>/admin/assets/vendor/echarts/echarts.min.js"></script>
+<script src="<%= process.env.PLATFORM_URL %>/admin/assets/vendor/quill/quill.min.js"></script>
+<script src="<%= process.env.PLATFORM_URL %>/admin/assets/vendor/simple-datatables/simple-datatables.js"></script>
+<script src="<%= process.env.PLATFORM_URL %>/admin/assets/vendor/tinymce/tinymce.min.js"></script>
+<script src="<%= process.env.PLATFORM_URL %>/admin/assets/vendor/php-email-form/validate.js"></script>
+<!-- Template Main JS File -->
+<script src="<%= process.env.PLATFORM_URL %>/admin/assets/js/main.js"></script>
+

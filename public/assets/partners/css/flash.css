@@ -1,0 +1,133 @@
+/*
+Flash Message Settings
+*/
+/* 
+    Created on : 04-Feb-2016, 16:30:51
+    Author     : james.abiagam
+    Email      : james.abiagam@genixcloud.com 
+*/
+.flash-message-wrapper {
+  width: 700px;
+  position: fixed;
+  top: 12%;
+  /*    left:24%;*/
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 1.2em;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  /*    transform:translate(50%,10%);*/
+  z-index: 999999000;
+  /*    -moz-opacity: 0.8;
+    -webkit-opacity: 0.8;
+    opacity: 0.8;*/
+}
+
+/***************************************************
+* MFC Flash messages
+****************************************************/
+/*#flash_bad:before{
+    content: "<i class='fa fa-times-circle'></i>";
+    background-position:left;
+    background-repeat:no-repeat;
+} */
+#flash_bad:before {
+  font-family: "FontAwesome";
+  content: "\f06a";
+  font-size: 1.6em;
+  display: inline-block;
+  padding-right: 8px;
+  vertical-align: middle;
+  -moz-osx-font-smoothing: grayscale;
+}
+#flash_bad {
+  padding: 15px;
+  margin-bottom: 22px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  background-color: #d9534f;
+  border-color: #d9534f;
+  color: #ffffff;
+  background-position: left;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+#flash_good:before {
+  font-family: "FontAwesome";
+  content: "\f05d";
+  font-size: 1.6em;
+  display: inline-block;
+  padding-right: 8px;
+  vertical-align: middle;
+  -moz-osx-font-smoothing: grayscale;
+}
+#flash_good {
+  padding: 15px;
+  margin-bottom: 22px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  background-color: #3fad46;
+  border-color: #3fad46;
+  color: #ffffff;
+  background-position: left;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+#flash_notice:before {
+  font-family: "FontAwesome";
+  content: "\f05a";
+  font-size: 1.6em;
+  display: inline-block;
+  padding-right: 8px;
+  vertical-align: middle;
+  -moz-osx-font-smoothing: grayscale;
+}
+#flash_notice {
+  padding: 15px;
+  margin-bottom: 22px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  background-color: #5bc0de;
+  border-color: #5bc0de;
+  color: #ffffff;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+#flash_warning:before {
+  font-family: "FontAwesome";
+  content: "\f071";
+  font-size: 1.6em;
+  display: inline-block;
+  padding-right: 8px;
+  vertical-align: middle;
+  -moz-osx-font-smoothing: grayscale;
+}
+#flash_warning {
+  padding: 15px;
+  margin-bottom: 22px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  -ms-border-radius: 4px;
+  background-color: #f0ad4e;
+  border-color: #f0ad4e;
+  color: #ffffff;
+  background-position: left;
+  background-repeat: no-repeat;
+}

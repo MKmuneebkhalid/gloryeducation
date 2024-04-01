@@ -1,0 +1,48 @@
+<% if( message === 'default' ) { %>
+
+<% } %>
+<% if(message) { %>
+    <% if (message.group === 'swal'){ %>
+        <script>
+            var type = '<%= message.type %>';
+            console.log
+            var flashMessage = '<%= message.message %>';
+            switch(type){
+                case 'error':
+                    Swal.fire(flashMessage,'',type);
+                    break;
+                case 'success':
+                    Swal.fire(flashMessage,'',type);
+                    break;
+                case 'info':
+                    Swal.fire(flashMessage,'',type);
+                    break;
+                case 'warning':
+                    Swal.fire(flashMessage,'',type);
+                    break;
+            }
+        </script>
+    <% } %>
+    <% if(message.group === 'flash'){  %>
+
+        <div class="flash-message-wrapper">
+            <% if (message.type === 'error') { %>
+                <div class="alert alert-danger" role="alert"><b><%= message.message %></b></div>
+            <% } %>
+            <% if (message.type === 'success') { %>
+                <div class="alert alert-success" role="alert"><b><%= message.message %></b></div>
+            <% } %>
+            <% if (message.type === 'warning') { %>
+                <div class="alert alert-warning" role="alert"><b><%= message.message %></b></div>
+            <% } %>
+            <% if (message.type === 'info') { %>
+                <div class="alert alert-info" role="alert"><b><%= message.message %></b></div>
+            <% } %>
+        </div>
+        <script>
+            setTimeout(function() {
+                $(".flash-message-wrapper").delay(4000).fadeOut(900);// Do something after 7 seconds
+            }, 7000);
+        </script>
+
+<% }}  %>

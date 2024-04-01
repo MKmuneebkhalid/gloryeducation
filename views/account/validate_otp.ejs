@@ -1,0 +1,65 @@
+
+<main>
+    <div class="container">
+
+        <section class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-8 d-flex flex-column align-items-center justify-content-center">
+
+                        <div class="d-flex justify-content-center py-4">
+                            <a href="<%= process.env.PLATFORM_URL %>" class="logox d-flex align-items-center w-auto">
+                                <img src="https://gloryeduserve.com/assets/images/logo.png" alt="logo">
+                            </a>
+                        </div><!-- End Logo -->
+
+                        <div class="card mb-3">
+
+                            <div class="card-body">
+
+                                <div class="pt-4 pb-2">
+                                    <p class="text-center small">We sent a verification code to:</p>
+                                    <h5 class="card-titlez text-center pb-0 fs-4"><b><%= email %></b></h5>
+                                    <p class="text-center small">Please enter the verification code to continue</p>
+                                </div>
+
+                                <form  action="/validate-otp"  method="post" name="login" class="row g-3 needs-validation cmxform" novalidate id="authForm" enctype="multipart/form-data">
+                                         <input type="hidden" name="recipient" value="<%= email %>">
+                                    <div class="col-12">
+                                        <label for="yourUsername" class="form-label">Enter OTP</label>
+                                        <div class="input-group has-validation">
+                                            <span class="input-group-text" id="inputGroupPrepend"><i class="fa fa-lock"></i></span>
+                                            <input type="text" name="token" class="form-control" id="token" required>
+                                            <div class="invalid-feedback">Please enter your verification code</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12"><br/>
+                                        <button class="btn btn-primary btn-pad w-100" type="submit" id="btnSubmit">Verify & Continue</button>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="small mb-0">Don't receive the verification code? <a href="<%= process.env.PLATFORM_URL %>/request-otp/<%= email %>/<%= firstname %>">Request a new one</a></p>
+                                    </div>
+                                </form>
+                                <br/><br/><br/>
+
+                            </div>
+                        </div>
+
+                        <div class="credits">
+                            <!-- All the links in the footer should remain intact. -->
+                            <!-- You can delete the links only if you purchased the pro version. -->
+                            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                            <br/><br/><br/>
+                            <p><small>&copy; 2023 &nbsp; Glory Educational Services.  All rights reserved </small></p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+</main><!-- End #main -->
+<script src="<%= process.env.PLATFORM_URL %>/admin/assets/js/login.js"></script>
